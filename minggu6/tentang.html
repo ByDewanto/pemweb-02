@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Personal Website</title> 
+    <style>
+        article{
+            text-align: center;
+        }
+    </style>
+</head> 
+ 
+<body> 
+    <nav> 
+        <a href="index.html">Home</a> | 
+        <a href="Llama.pdf">Wiki tentang llama</a> | 
+        <a href="kontak.html">Hubungi kami</a> | 
+        <a href="tentang.html">Lebih mengenai llama</a> 
+    </nav> 
+ 
+    <hr/> 
+ 
+    <article> 
+        <h1>Mengenai Llama</h1> 
+        <p> 
+            Llama diketahui memiliki ukuran tubuh yang besar, ukuran berat tubuh Llama biasanya mencapai 400 pon atau sama dengan 200 kg.
+        </p> 
+        <p> 
+            <video id="videollama" controls> 
+                <source src="llama_sounds.mp4" type="video/mp4"> 
+            </video> 
+        </p> 
+        <p>
+            <button onclick="playPause()">Play/Pause Video</button> 
+		</p>
+        <script> 
+            var myVideo = document.getElementById("videollama"); 
+            
+            function playPause() { 
+            if (myVideo.paused) 
+                myVideo.play(); 
+            else 
+                myVideo.pause(); 
+            } 
+        </script>
+    </article> 
+
+    <hr> 
+    <footer style="text-align: center;"> 
+        <p>Copyright &copy; 2020 Maruta's.</p> 
+    </footer> 
+</body> 
+</html> 
