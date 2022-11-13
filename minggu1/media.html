@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background: url("../media/background-untuk-html-7.jpg");
+                text-align: center;
+            }
+            video{
+                margin: auto 0px;
+                display: block;
+            }
+            a{
+                color:aliceblue;
+                text-decoration:none;
+
+            }
+            footer{
+                text-align: left;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 45px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>TUGAS PEMBUATAN WEBSITE DENGAN VIDEO DAN PROPERTI LAIN</h1>
+        <center>
+        <video id="videobunny" width="600" height="360" controls loop>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/ogg">
+        </video>
+        </center>
+        <p>
+            <button onclick="playPause()">Play/Pause Video</button> 
+		</p>
+        <script> 
+            var myVideo = document.getElementById("videobunny"); 
+            
+            function playPause() { 
+            if (myVideo.paused) 
+                myVideo.play(); 
+            else 
+                myVideo.pause(); 
+            } 
+        </script>
+        <br>
+        <audio controls autoplay loop>
+            <source src="Swedden.ogg" type="audio/ogg">
+            <source src="media/Sweden.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <button onclick="playPause()">Play/Pause Audio</button> 
+    </body>
+    <footer>
+        <h3><a href="../index.html"  >kembali ke menu.</a></h3>
+    </footer>
+</html>
