@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World js</title>
+        <script>
+            function calculate(){
+                var myForm = document.aritmatika;
+                var x = eval(myForm.x.value);
+                var y = eval(myForm.y.value);
+                var yuuki = myForm.opsi.value;
+                
+                if (yuuki == "+") {
+                    var z = x+y;
+                } else if (yuuki == "-"){
+                    var z = x-y;
+                } else if (yuuki == "*"){
+                    var z = x*y;
+                } else if (yuuki == "/"){
+                    var z = x/y;
+                }
+
+                myForm.hasil.value = z;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>JavaScript</h1>
+        <form name="aritmatika" action="#">
+            x <input type="number" name="x"><br>
+            <select name="opsi">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select><br>
+            y <input type="number" name="y"><br>
+            <input type="button" value="=" onclick="calculate()">
+            <input type="number" name="hasil" disabled>
+        </form>
+        <!--
+                    <p id="p1">its over anakin</p>
+        <p id="p2">I have the high ground</p>
+        <a href="#" onclick="alert('you got no legs!')">you understimate my power</a>
+        <p id="p3">lore ipsum march ben skaet</p>
+        <script>
+            var hasil = document.getElementById("p3");
+            hasil.innerHTML = "<p>hime hime hime suki suki daisuki hime</p>"
+            console.log("saya belajar js");
+            document.write("I'm the king of the world!");
+        -->
+        </script>
+    </body>
+</html>
