@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>minggu11</title>
+</head>
+<body>
+    <h3>Daftar Mahasiswa</h3>
+    <form action="">
+        <input type="text" id="nama">
+        <input type="submit" value="+" onclick="inputnamamhs()">
+    </form>
+    <div>
+        <script>
+            function inputnamamhs(){
+                var txtName = document.getElementById("nama");
+                var divOutput = document.getElementById("divOutput");
+                divOutput.minggu11 = txtName;
+            }
+        </script>
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Nama Mahasiswa</td>
+            </tr>
+        </thead>
+    <div id="divOutput">
+        <tbody>
+            <td>
+
+            </td>
+        </tbody>
+    </div>
+    </table>
+</body>
+</html>
